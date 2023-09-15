@@ -1,4 +1,4 @@
- #include<iostream>
+#include<iostream>
 using namespace std;
 class Box{
     int l,b,h;
@@ -7,11 +7,11 @@ class Box{
     int getVolume(){
         return l*b*h;
     }
-    Box operator-(Box &n){
+    Box operator--(int){
         Box t;
-        t.l = l - n.l;
-        t.b = b - n.b;
-        t.h = h - n.h;
+        t.l = l--;
+        t.b = b--;bv   
+        t.h = h--;
         return t;
     }
 };
@@ -19,12 +19,10 @@ void Box :: setData(int x,int y,int z){
     l=x , b=y ,h=z;
 }
 int main(){
-    Box a,b,c;
-    a.setData(10,10,10);
+    Box a,n;
+    a.setData(5,5,5);
     cout<<"Volume of Box A is : "<<a.getVolume()<<endl;
-    b.setData(5,5,5);
-    cout<<"Volume of Box B is : "<<b.getVolume()<<endl;
-    
-    c=a-b;
-    cout<<"volume of Box C is : "<<c.getVolume()<<endl;
+    a--;
+    n=a;
+    cout<<"volume of Box N is : "<<n.getVolume()<<endl;
 }
