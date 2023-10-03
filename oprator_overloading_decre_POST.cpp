@@ -10,7 +10,7 @@ class Box{
     Box operator--(int){
         Box t;
         t.l = l--;
-        t.b = b--;bv   
+        t.b = b--;   
         t.h = h--;
         return t;
     }

@@ -14,11 +14,11 @@ int main()
 {
     int i,n;
     
-    cout<<" enter the number : ";
+    cout<<"enter the number : ";
     cin>> n;
     
     for(i=0; i<n; i++)
     {
-        cout<< fibbonnaci(i);
+        cout<< "\t"<<fibbonnaci(i);
     }
 }
